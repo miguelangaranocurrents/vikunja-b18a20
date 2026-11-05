@@ -354,6 +354,11 @@ const DRAG_OPTIONS = {
 	dragClass: 'task-dragging',
 	delayOnTouchOnly: true,
 	delay: 1000,
+	// Scroll the board when dragging close to its edges so off-screen buckets are reachable.
+	scroll: true,
+	bubbleScroll: true,
+	scrollSensitivity: 100,
+	scrollSpeed: 20,
 } as const
 
 const MIN_SCROLL_HEIGHT_PERCENT = 0.25
